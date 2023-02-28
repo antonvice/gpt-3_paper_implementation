@@ -2,11 +2,12 @@
 This repository contains an implementation of the GPT-3 language model in PyTorch. The model architecture is based on the original GPT-3 paper [1] and consists of a stack of Transformer encoder layers, followed by a linear output layer. The model is trained using a standard autoregressive language modeling objective, where the goal is to predict the next token in a sequence given the previous tokens.
 
 # Requirements
-Python 3.x
-PyTorch
-Transformers
-tqdm
-Model Architecture
+* Python 3.x
+* PyTorch
+* Transformers
+* tqdm
+
+# Model Architecture
 The GPT-3 model architecture is based on a stack of Transformer encoder layers, where each layer consists of a multi-head self-attention mechanism and a feedforward neural network. The output of each layer is passed through a residual connection and a layer normalization step, before being passed to the next layer. The final layer is a linear output layer that maps the output of the last Transformer layer to a probability distribution over the vocabulary.
 
 The model architecture is implemented in the GPT3 class in model.py.
